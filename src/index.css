@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /* Project Colors */
+    --forest: 44 62 49;
+    --parchment: 245 241 233;
+    --accent-orange: 229 122 68;
+    --accent-teal: 20 184 166;
+    /* Light Theme */
+    --background: 210 40% 98%; /* Lighter gray */
+    --foreground: 215 28% 17%; /* Darker gray-blue */
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+    --primary: 173 80% 40%; /* accent-teal */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 94%;
+    --secondary-foreground: 215 28% 17%;
+    --muted: 210 40% 90%;
+    --muted-foreground: 215 25% 45%;
+    --accent: 210 40% 90%;
+    --accent-foreground: 215 28% 17%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 173 80% 40%;
+    --radius: 1rem;
+  }
+  .dark {
+    /* Dark Theme */
+    --background: 222 47% 11%; /* Dark blue */
+    --foreground: 210 40% 98%; /* Light gray */
+    --card: 222 47% 14%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 173 80% 40%; /* accent-teal */
+    --primary-foreground: 222 47% 11%;
+    --secondary: 222 47% 18%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 222 47% 18%;
+    --muted-foreground: 210 40% 60%;
+    --accent: 222 47% 18%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 47% 20%;
+    --input: 222 47% 20%;
+    --ring: 173 80% 40%;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    text-rendering: optimizeLegibility;
+  }
+}
+@layer components {
+  .text-body {
+    @apply text-lg text-foreground/80;
+  }
+  .section-padding {
+    @apply px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32;
+  }
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+}
