@@ -1,6 +1,6 @@
 # Cesta Básnikov
 A visually immersive web experience for the 'Cesta básnikov' cultural-tourism trail, guiding visitors through a journey of poetry, art, and nature.
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/gumike128/cesta-basnikov)
 ## ✨ Key Features
 *   **Interactive Trail Map**: Explore the tourist trail with detailed stops, route information, and practical details.
 *   **Poet & Sculpture Profiles**: A comprehensive, searchable directory of featured poets and their corresponding sculptures.
@@ -62,4 +62,4 @@ bun run deploy
 ```
 This command will build the project and deploy it using the Wrangler CLI.
 Alternatively, you can connect your GitHub repository to Cloudflare Pages for automatic deployments on every push to your main branch.
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/gumike128/cesta-basnikov)
